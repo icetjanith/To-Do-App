@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane prefHeight="474.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.AddTaskWindowController">
+   <children>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#1b1464" height="78.0" stroke="BLACK" strokeType="INSIDE" width="600.0" />
+      <Label layoutX="252.0" layoutY="22.0" prefHeight="31.0" prefWidth="95.0" text="Add Task" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="21.0" />
+         </font>
+      </Label>
+      <JFXTextField fx:id="title" layoutX="190.0" layoutY="121.0" prefHeight="26.0" prefWidth="218.0" promptText="Task Name" />
+      <TextArea fx:id="description" layoutX="191.0" layoutY="184.0" prefHeight="52.0" prefWidth="218.0" promptText="Task Description" />
+      <DatePicker fx:id="completionDate" layoutX="190.0" layoutY="271.0" prefHeight="26.0" prefWidth="218.0" promptText="Completion Date" />
+      <JFXButton layoutX="237.0" layoutY="394.0" onAction="#addTaskOnAction" prefHeight="26.0" prefWidth="125.0" style="-fx-background-color: #1B1464;" text="Add " textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </JFXButton>
+      <JFXComboBox fx:id="catagory" layoutX="191.0" layoutY="330.0" prefHeight="26.0" prefWidth="218.0" promptText="Catagory" />
+   </children>
+</AnchorPane>

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane prefHeight="580.0" prefWidth="524.0" style="-fx-background-color: #1B1464;" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.MainWindowController">
+   <children>
+      <Label layoutX="51.0" layoutY="76.0" prefHeight="22.0" prefWidth="53.0" text="Todo :" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Label>
+      <ListView fx:id="todolist" layoutX="51.0" layoutY="113.0" prefHeight="331.0" prefWidth="422.0" />
+      <JFXButton layoutX="178.0" layoutY="479.0" onAction="#addNewTaskOnAction" prefHeight="26.0" prefWidth="170.0" style="-fx-background-color: white;" text="Add New Task">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </JFXButton>
+      <JFXButton layoutX="178.0" layoutY="523.0" onAction="#addCompletedTasksOnAction" prefHeight="26.0" prefWidth="170.0" style="-fx-background-color: white;" text="Completed Tasks">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </JFXButton>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="44.0" layoutX="157.0" layoutY="15.0" stroke="BLACK" strokeType="INSIDE" width="210.0" />
+      <Label layoutX="217.0" layoutY="22.0" text="ToDo List">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
